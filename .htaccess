@@ -1,0 +1,14 @@
+ErrorDocument 401 /401.html 
+<files auth.html>
+AuthType Basic
+AuthName "гони логин и пароль"
+AuthUserFile "/storage/ssd4/193/15005193/public_html/.htpasswd"
+Require valid-user
+#Order allow,deny
+#Allow from 127.0.0.1
+#Satisfy Any
+</files>
+<FilesMatch "\.(htaccess|htpasswd)$">
+Order Allow,Deny
+Deny from All
+</FilesMatch>
