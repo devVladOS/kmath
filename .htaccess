@@ -1,4 +1,5 @@
-ErrorDocument 401 /401.html 
+ErrorDocument 401 /401.html
+ErrorDocument 404 /404.html
 <files auth.html>
 AuthType Basic
 AuthName "гони логин и пароль"
